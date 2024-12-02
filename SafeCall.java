@@ -1,6 +1,6 @@
 import java.util.function.Supplier;
 
-public class NullSafe {
+public class SafeCall {
 
     /**
      * Prevents NullPointerException

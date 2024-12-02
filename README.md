@@ -1,12 +1,12 @@
-# NullSafeJava
-A helper object to prevent NullPointerExceptions in Java
+# SafeCallJava
+A simple class to prevent NullPointerExceptions in Java
 
 #### Java
 
 ```Java
 import java.util.function.Supplier;
 
-public class NullSafe {
+public class SafeCall {
 
     /**
      * Prevents NullPointerException
@@ -24,7 +24,7 @@ public class NullSafe {
 #### Kotlin
 
 ```kotlin
-object NullSafe {
+object SafeCall {
 
     /**
      * Prevents [NullPointerException] in java
@@ -43,7 +43,7 @@ object NullSafe {
 
 ## Usage in Java
 ```Java
-NullSafe.get(() -> getSomeObj().getProperty());
+SafeCall.get(() -> getSomeObj().getProperty());
 ```
 
-If **getSomeObj** method returns null, instead of occurence of a NullPointerException, NullSafe::get will return null.
+If **getSomeObj** method returns null, instead of occurence of a NullPointerException, SafeCall::get will return null.

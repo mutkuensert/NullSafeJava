@@ -1,4 +1,4 @@
-object NullSafe {
+object SafeCall {
 
     /**
      * Prevents [NullPointerException] in java
