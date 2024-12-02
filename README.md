@@ -1,6 +1,8 @@
 # NullSafeJava
 A helper object to prevent NullPointerExceptions in Java
 
+#### Java
+
 ```Java
 import java.util.function.Supplier;
 
@@ -18,6 +20,8 @@ public class NullSafe {
     }
 }
 ```
+
+#### Kotlin
 
 ```kotlin
 object NullSafe {
@@ -37,7 +41,7 @@ object NullSafe {
 
 ```
 
-## Usage
+## Usage in Java
 ```Java
 NullSafe.get(() -> getSomeObj().getProperty());
 ```
